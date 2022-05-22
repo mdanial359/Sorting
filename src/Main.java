@@ -136,7 +136,7 @@ class Sort {
         outEpoch+=3;   // assign currentPosition, arithmetic, for loop
         int currentPosition = maxWordSize-1;
         for (int q=0; q<maxWordSize;q++){
-            outEpoch += rSort.simplySort(dataset, q%2, currentPosition);
+            outEpoch += rSort.sort(dataset, q%2, currentPosition);
             currentPosition--;
             outEpoch+=4;    // for loop, call function, decrement 
         }
@@ -206,7 +206,7 @@ public class Main extends Sort{
         
         //To change sorting type 
         //Set sorting name accordingly
-        sortObj.setName("Bubble"); //Insert sorting type here
+        sortObj.setName("Radix"); //Insert sorting type here
         int intval = 10000;
         String[] input = readFile.readCount(words[0], intval);
         String result[][] = new String[caseName.length][];

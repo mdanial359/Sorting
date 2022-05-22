@@ -9,7 +9,7 @@ public class RadixSort
      * Assume all have length bounded by maxLen
      */
     // a function to simply sort
-    public long simplySort(ArrayList<String> [][] array3, int arraynum1, int currentposition){
+    public long sort(ArrayList<String> [][] array3, int arraynum1, int currentposition){
         int arraynum2 = 1 - arraynum1;
         long epoch = 2; // arithmetic and assigning
 
